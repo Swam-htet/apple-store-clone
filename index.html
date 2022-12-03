@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apple Store</title>
+
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- style -->
+    <style>
+        .list {
+            list-style: none;
+            margin-bottom: 20px;
+        }
+
+        .list>li {
+            margin-bottom: 5px;
+            padding-right: 0%;
+        }
+
+        footer .col h6 {
+
+            font-size: 100%;
+            margin-left: 20px;
+        }
+
+        footer p a {
+            text-decoration: none;
+        }
+
+        .box {
+            width: 100%;
+            height: 70vh;
+        }
+
+        .item-box {
+            height: 50vh;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- top nav -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+
+        <div class="container-fluid container-lg">
+            <a href="#" class="navbar-brand ms-2">
+                <i class="fab fa-apple"></i>
+            </a>
+
+            <!-- responsive button -->
+            <button class="navbar-toggler hidden-lg-up" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <!-- responsive nav list -->
+            <div class="collapse navbar-collapse " id="collapsibleNavId">
+                <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+
+
+                    <!-- nav item -->
+                    <li class="nav-item ms-2">
+                        <a class="nav-link" href="#">Mac</a>
+                    </li>
+
+                    <!-- nav item -->
+                    <li class="nav-item ms-2">
+                        <a class="nav-link" href="#">iPad</a>
+                    </li>
+
+                    <!-- nav item -->
+                    <li class="nav-item ms-2">
+                        <a class="nav-link" href="#">iPhone</a>
+                    </li>
+
+                    <!-- nav item -->
+                    <li class="nav-item ms-2">
+                        <a class="nav-link" href="#">Watch</a>
+                    </li>
+
+                    <!-- nav item -->
+                    <li class="nav-item ms-2">
+                        <a class="nav-link" href="#">AirPods</a>
+                    </li>
+
+                    <!-- nav item -->
+                    <li class="nav-item ms-2">
+                        <a class="nav-link" href="#">TV & Home</a>
+                    </li>
+
+                    <!-- nav item -->
+                    <li class="nav-item ms-2">
+                        <a class="nav-link" href="#">Only on Apple</a>
+                    </li>
+
+                    <!-- nav item -->
+                    <li class="nav-item ms-2">
+                        <a class="nav-link" href="#">Accessories</a>
+                    </li>
+
+                    <li class="nav-item dropdown ms-2">
+                        <a href="#" class="nav-link" data-bs-toggle="dropdown">
+                            <i class="fas fa-search"></i>
+                        </a>
+                        <div class="dropdown-menu" style="width:300px;">
+                            <form action="" class="input-group  container">
+                                <input type="text" class="form-control form-control-sm" placeholder="Search here">
+                                <button class="btn btn-secondary">
+                                    Search
+                                </button>
+                            </form>
+                        </div>
+
+                    </li>
+
+
+
+                    <li class="nav-item dropdown ms-2">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">More</a>
+                        <div class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownId">
+                            <a class="dropdown-item" href="#">About Us</a>
+                            <a class="dropdown-item" href="#">Support </a>
+                            <a class="dropdown-item" href="#">Store</a>
+                            <a class="dropdown-item" href="#">Sign in </a>
+
+                        </div>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+    </nav>
+
+    <div class="container-fluid">
+        <div class="row">
+
+            <!-- left col -->
+            <div class="col-1 d-none d-lg-block">
+                <ul class="nav flex-column mt-5">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link text-dark">Mac</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link text-dark">iPad</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link text-dark">iPhone</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link text-dark">Watch</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link text-dark">AirPods</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link text-dark">TV & Apple</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link text-dark">Accessories</a>
+                    </li>
+                </ul>
+            </div>
+
+
+            <!-- right col -->
+            <div class="col-12 col-lg-10">
+
+                <div class="new-item container-fluid mx-2 my-3 p-2">
+                    <div class="row">
+                        <div class="col">
+                            <div class="card item-box bg-danger">
+
+                            </div>
+                        </div>
+                        <div class="col">
+                            <h3 class="display-3">Item</h3>
+                            <p class="text-dark">
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem quaerat dignissimos
+                                laboriosam!
+                                Optio praesentium minima placeat animi doloribus. Repellendus nisi minus voluptas
+                                explicabo
+                                voluptatibus, sequi totam nihil tempore praesentium illum.
+                            </p>
+                            <div class="d-flex">
+                                <a href="#">Shop More <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="new-item container-fluid mx-2 my-3 p-2">
+                    <div class="row">
+
+                        <div class="col">
+                            <h3 class="display-3">Item</h3>
+                            <p class="text-dark">
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem quaerat dignissimos
+                                laboriosam!
+                                Optio praesentium minima placeat animi doloribus. Repellendus nisi minus voluptas
+                                explicabo
+                                voluptatibus, sequi totam nihil tempore praesentium illum.
+                            </p>
+                            <div class="d-flex">
+                                <a href="#">Shop More <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card item-box bg-warning">
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="new-item container-fluid mx-2 my-3 p-2">
+                    <div class="row">
+                        <div class="col">
+                            <div class="card item-box bg-primary">
+
+                            </div>
+                        </div>
+                        <div class="col">
+                            <h3 class="display-3">Item</h3>
+                            <p class="text-dark">
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem quaerat dignissimos
+                                laboriosam!
+                                Optio praesentium minima placeat animi doloribus. Repellendus nisi minus voluptas
+                                explicabo
+                                voluptatibus, sequi totam nihil tempore praesentium illum.
+                            </p>
+                            <div class="d-flex">
+                                <a href="#">Shop More <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- carousel slide -->
+    <div id="slider1" class="container-fluid carousel my-3 slide" data-bs-ride="carousel">
+
+        <ol class="carousel-indicators">
+            <li data-bs-target="#slider1" data-bs-slide-to="0" class="active"></li>
+            <li data-bs-target="#slider1" data-bs-slide-to="1"></li>
+            <li data-bs-target="#slider1" data-bs-slide-to="2"></li>
+        </ol>
+
+        <div class="carousel-inner">
+            <div class="carousel-item box active bg-danger"></div>
+            <div class="carousel-item box bg-warning"></div>
+            <div class="carousel-item box bg-primary"></div>
+        </div>
+
+        <a class="carousel-control-prev" href="#slider1" role="button" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        </a>
+        <a class="carousel-control-next" href="#slider1" role="button" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </a>
+    </div>
+
+    <!-- paragraph -->
+    <p class="container my-5">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste ex atque ipsam repellat ullam animi! Earum soluta
+        quod consequatur, itaque enim harum sapiente magnam illo sequi, aliquam nulla culpa? Distinctio?
+        <br>
+        <br>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. At corporis totam neque earum nobis. Non ab nostrum,
+        aut error itaque quaerat vel aliquam optio fugiat impedit nemo nisi in quidem!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum dolores doloribus animi error obcaecati minima
+        assumenda culpa autem nisi sed mollitia quod facilis in facere suscipit, porro maiores ducimus beatae.
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur magni nemo tempore aperiam. Error ullam
+        dolorum molestias, iusto illo officiis nam eos delectus vel accusantium sit omnis nesciunt repellendus commodi!
+        <br>
+        <br>
+
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus magnam hic cum! Temporibus odio ipsum saepe
+        error autem id incidunt fugit aliquam ab itaque laboriosam, dolore ratione? Molestiae, quod non.
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id placeat ea ratione iste odio quaerat accusantium
+        consequatur, quibusdam alias vitae explicabo sunt eum quasi unde tenetur eveniet accusamus officiis doloremque.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis maxime laudantium reiciendis quas atque
+        obcaecati quod iure totam ipsa distinctio, praesentium fugit quia nostrum, eveniet animi quam sequi voluptatem
+        in?
+    </p>
+
+    <footer class="container my-4">
+
+        <div class="footer-menu row">
+            <!-- first col -->
+            <div class="col">
+                <h6 class="fw-semibold">
+                    Shop and Learn
+                </h6>
+
+                <ul class="list flex-column">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link text-dark">Store</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#" class="nav-link text-dark">Mac</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#" class="nav-link text-dark">iPad</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#" class="nav-link text-dark">iPhone</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#" class="nav-link text-dark">Watch</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#" class="nav-link text-dark">AirPods</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#" class="nav-link text-dark">TV & Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#" class="nav-link text-dark">AirTag</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#" class="nav-link text-dark">Accessories</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#" class="nav-link text-dark">Gift Cards</a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+            <!-- second col -->
+            <div class="col">
+
+                <!-- fist header -->
+                <h6 class="fw-semibold">
+                    Services
+                </h6>
+                <!-- fist list -->
+                <ul class="list flex-column">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link text-dark">Apple Music</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#" class="nav-link text-dark">Apple TV+</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#" class="nav-link text-dark">Apple Fitness+</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#" class="nav-link text-dark">Apple News+</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#" class="nav-link text-dark">Apple Arcade</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#" class="nav-link text-dark">iCloud</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#" class="nav-link text-dark">Apple One</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#" class="nav-link text-dark">Apple Card</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#" class="nav-link text-dark">Apple Books</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#" class="nav-link text-dark">Apple Podcasts</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#" class="nav-link text-dark">App store</a>
+                    </li>
+
+                </ul>
+
+                <!-- second header -->
+                <h6 class="fw-semibold">
+                    Account
+                </h6>
+
+                <!-- second list -->
+                <ul class="list flex-column">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link text-dark">Manage Your Apple ID</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#" class="nav-link text-dark">Apple Store Account</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#" class="nav-link text-dark">iCloud.com</a>
+                    </li>
+
+
+                </ul>
+            </div>
+
+            <!-- third col -->
+            <div class="col">
+                <h6 class="fw-semibold">
+                    Apple Store
+                </h6>
+
+                <ul class="list flex-column">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link text-dark">Find a Store</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#" class="nav-link text-dark">Genius Bar</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#" class="nav-link text-dark">Today at Apple</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#" class="nav-link text-dark">Apple Camp</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#" class="nav-link text-dark">Apple Store App</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#" class="nav-link text-dark">Refurbished and Clearance</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#" class="nav-link text-dark">Financing</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#" class="nav-link text-dark">Apple Trade In</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#" class="nav-link text-dark">Order Status</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#" class="nav-link text-dark">Shopping Help</a>
+                    </li>
+
+                </ul>
+            </div>
+
+            <!-- fourth col -->
+            <div class="col">
+                <!-- first header -->
+                <h6 class="fw-semibold">
+                    For Bussiness
+                </h6>
+
+                <!-- first list -->
+                <ul class="list flex-column">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link text-dark">Apple and Bussiness</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#" class="nav-link text-dark">Shop for Bussiness</a>
+                    </li>
+
+                </ul>
+
+                <!-- second header -->
+                <h6 class="fw-semibold">
+                    For Healthcare
+                </h6>
+
+                <!-- second list -->
+                <ul class="list flex-column">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link text-dark">Apple in Healthcare</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#" class="nav-link text-dark">Hearlth on Apple Watch</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#" class="nav-link text-dark">Health Records on iPhone</a>
+                    </li>
+                </ul>
+
+                <!-- third headder -->
+                <h6 class="fw-semibold">
+                    For Education
+                </h6>
+
+                <!-- third list -->
+                <ul class="list flex-column">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link text-dark">Apple and Education</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#" class="nav-link text-dark">Shop for K-12</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#" class="nav-link text-dark">Shop for Collage</a>
+                    </li>
+
+                </ul>
+
+                <!-- fourth header -->
+                <h6 class="fw-semibold">
+                    For Government
+                </h6>
+
+                <!-- fourth list -->
+                <ul class="list flex-column">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link text-dark">Shop for Government</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#" class="nav-link text-dark">Shop for Veterans and Military</a>
+                    </li>
+
+
+                </ul>
+            </div>
+
+            <!-- fifth col -->
+            <div class="col">
+
+                <!-- first header -->
+                <h6 class="fw-semibold">
+                    Apple Values
+                </h6>
+
+                <!-- first list -->
+                <ul class="list flex-column">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link text-dark">Accessibility</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#" class="nav-link text-dark">Education</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#" class="nav-link text-dark">Envirnment</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#" class="nav-link text-dark">Inclusion and Diversity</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#" class="nav-link text-dark">Privacy</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#" class="nav-link text-dark">Racial Equality and Justice</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#" class="nav-link text-dark">Supplier Respoinsibility</a>
+                    </li>
+
+
+
+                </ul>
+
+                <!-- second header -->
+                <h6 class="fw-semibold">
+                    About Apple
+                </h6>
+
+                <!-- second list -->
+                <ul class="list flex-column">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link text-dark">Newsroom</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#" class="nav-link text-dark">Apple leadership</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#" class="nav-link text-dark">Career Opportunities</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#" class="nav-link text-dark">Investors</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#" class="nav-link text-dark">Ethies & Compiliance</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#" class="nav-link text-dark">Events</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#" class="nav-link text-dark">Content Apple</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+
+        <!-- footer text -->
+        <p class="text-dark">
+            More ways to shops:
+            <a href="#"> Find an Apple Store</a> or
+            <a href="#"> other retailder</a> near you. Or call xxxxxxxxxxx.
+        </p>
+
+        <!-- line break -->
+        <hr>
+
+        <!-- footer bottom -->
+        <div class="row">
+            <div class="col-5">
+                <p class="text-dark pt-2" style="font-size: 80%;">
+                    Copyright &copy; 2022 Apple lnc. All right reserved.
+                </p>
+            </div>
+
+            <div class="col">
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link" style="font-size: 70%;">
+                            Privacy Policy
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link" style="font-size: 70%;">
+                            Terms of Use
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link" style="font-size: 70%;">
+                            Sales and Refunds
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link" style="font-size: 70%;">
+                            Legal
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-2">
+                <a href="#" class="pt-2">United States</a>
+            </div>
+        </div>
+
+    </footer>
+
+</body>
+
+<script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+</html>
